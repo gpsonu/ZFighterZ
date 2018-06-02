@@ -32,7 +32,7 @@ public class FeaturesTest
 	@Test
 	public void featureTest1() throws InterruptedException
 	{
-		HomePagePF 		ob1 = new HomePagePF		(driver)	;
+		HomePagePF		ob1 = new HomePagePF		(driver)	;
 		FeaturesPagePF	ob2 = new FeaturesPagePF	(driver)	;
 		
 		driver.get("https://www.freecrm.com/index.html");

@@ -1,4 +1,4 @@
-package com.test.login;
+package com.tests.login;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

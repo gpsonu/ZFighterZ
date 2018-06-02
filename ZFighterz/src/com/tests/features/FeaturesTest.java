@@ -1,4 +1,4 @@
-package com.test.features;
+package com.tests.features;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

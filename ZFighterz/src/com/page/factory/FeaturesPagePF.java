@@ -26,9 +26,9 @@ public class FeaturesPagePF
 	(xpath = "//img[@src='/img/tour1.jpg']")
 	WebElement feature1;
 	
-	public WebElement feature1Method()
+	public void feature1Method()
 	{
-		return feature1;
+		feature1.click();
 	}
 		
 }

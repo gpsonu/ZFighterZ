@@ -41,7 +41,7 @@ public class FeaturesTest
 		ob1.featuresLinkMethod().click();
 		
 		Thread.sleep(1000);
-		ob2.feature1Method().click();
+		ob2.feature1Method();
 		
 		Thread.sleep(1000);
 		if (driver.findElement(By.xpath("//img[@src='/img/dash1.jpg']")).isDisplayed())

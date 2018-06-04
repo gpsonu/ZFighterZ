@@ -8,7 +8,7 @@ Feature: CRM Sign Up Feature
     And I entered "<firstname>" and "<lastname>" and "<email>" and "<confirmemail>" and <userid>" 
     And "<password>" and "<confirmpassword>"
     And I click on checkbox
-    When I click on login
+    When I click on login button
     Then I should be logged in if the correct data was entered
 
     Examples: 

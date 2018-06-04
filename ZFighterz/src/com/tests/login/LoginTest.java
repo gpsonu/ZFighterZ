@@ -43,8 +43,22 @@ public class LoginTest
 		ob1.loginButtonMethod().click();
 		
 		String url = driver.getTitle();
-		Assert.assertEquals(url, "CRMPRO");
+		Assert.assertEquals(url, "CRMPRO");	
+	}
+	
+	
+	@Test
+	public void loginTest2p5() throws InterruptedException
+	{
+		HomePagePF ob1 = new HomePagePF(driver);
 		
+		driver.get("https://www.freecrm.com/index.html");
+		
+		Thread.sleep(1000);
+		ob1.loginButtonMethod().click();
+		
+		String url = driver.getTitle();
+		Assert.assertEquals(url, "CRMPRO");	
 	}
 	
 	

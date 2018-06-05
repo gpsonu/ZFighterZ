@@ -23,7 +23,11 @@ public class AccountPagePF {
 	}	
 	
 	@FindBy
+<<<<<<< HEAD
 	(xpath = "//*[@id=\"navMenu\"]/ul/li[10]/a")
+=======
+	(xpath = "/html/body/table[1]/tbody/tr[2]/td[1]/div/table/tbody/tr/td[4]/a/i")
+>>>>>>> branch 'master' of https://github.com/gpsonu/ZFighterZ.git
 	WebElement logoutButton;
 	
 	public void logoutButtonMethod()

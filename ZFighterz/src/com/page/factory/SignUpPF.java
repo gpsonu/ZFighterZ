@@ -28,7 +28,7 @@ public class SignUpPF {
 	}
 	
 	
-	// FINDBYS & METHODS - Sign Up Fields ==================================================
+	// FINDBYS & METHODS - Sign Up Fields =================================================
 	@FindBy
 	(xpath = "//*[@id=\'payment_plan_id\']")
 	

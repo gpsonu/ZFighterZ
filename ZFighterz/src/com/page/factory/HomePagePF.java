@@ -21,6 +21,14 @@ public class HomePagePF
 	
 	
 	
+	// URLS ==================================================
+	public void getURL()
+	{
+		driver.get("https://www.freecrm.com/index.html");
+	}
+	
+	
+	
 	// FINDBYS & METHODS ==================================================
 	@FindBy
 	(xpath = "//input[@name='username']")

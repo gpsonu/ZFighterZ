@@ -1,4 +1,4 @@
-package com.tests.login;
+package com.test.login;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -23,18 +23,19 @@ public class LoginTest
 		System.setProperty("wedsriver.chrome.driver", "chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		
+		HomePagePF ob1 = new HomePagePF(driver);
+		ob1.getURL();
 	}
 	
 	
 	
 	// TESTS ==================================================
-	@Test
+	@Test (priority = 1)
 	public void loginTest2p1() throws InterruptedException
 	{
 		HomePagePF ob1 = new HomePagePF(driver);
-		
-		driver.get("https://www.freecrm.com/index.html");
-		
+				
 		Thread.sleep(1000);
 		ob1.usernameFieldMethod().sendKeys("zfighterz");
 		ob1.passwordFieldMethod().sendKeys("zf123zf");
@@ -43,8 +44,20 @@ public class LoginTest
 		ob1.loginButtonMethod().click();
 		
 		String url = driver.getTitle();
-		Assert.assertEquals(url, "CRMPRO");
+		Assert.assertEquals(url, "CRMPRO");	
+	}
+	
+	
+	@Test (priority = 2)
+	public void loginTest2p5() throws InterruptedException
+	{
+		HomePagePF ob1 = new HomePagePF(driver);
+				
+		Thread.sleep(1000);
+		ob1.loginButtonMethod().click();
 		
+		String url = driver.getTitle();
+		Assert.assertEquals(url, "CRMPRO");	
 	}
 	
 	

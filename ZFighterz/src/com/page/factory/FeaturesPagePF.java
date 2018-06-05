@@ -29,6 +29,37 @@ public class FeaturesPagePF
 	
 	
 	// FINDBYS & METHODS - FEATURES PICS ==================================================
+	
+	@FindBy
+	(xpath = "//*[@id=\'second\']/div/div[1]/div[2]/div/ul/li[1]/a/figure/img")
+	WebElement feature1;
+	
+	public void feature1Method()
+	{
+		feature1.click();
+		
+	}
+	
+	@FindBy
+	(xpath = "//*[@id=\'second\']/div/div[1]/div[2]/div/ul/li[2]/a/figure/img")
+	WebElement feature2;
+	
+	public void feature2Method()
+	{
+		feature2.click();
+		
+	}
+	
+	@FindBy
+	(xpath = "//*[@id=\'second\']/div/div[1]/div[2]/div/ul/li[3]/a/figure/img")
+	WebElement feature3;
+	
+	public void feature3Method()
+	{
+		feature3.click();
+		
+	}
+	
 	@FindBy
 	(xpath = "//img[@src='/img/tour4.jpg']")
 	WebElement feature4;
@@ -110,6 +141,26 @@ public class FeaturesPagePF
 	public void russianLinkMethod()
 	{
 		russianLink.click();
+	}
+	
+	
+	@FindBy
+	(xpath = "//*[@id=\'footer\']/div/div/div[2]/ul/li[3]/a")
+	WebElement french;
+	
+	public void frenchMethod()
+	{
+		french.click();
+
+	}
+	
+	@FindBy
+	(xpath = "//*[@id=\"footer\"]/div/div/div[2]/ul/li[4]/a")
+	WebElement chinese;
+	
+	public void chineseMethod()
+	{
+		chinese.click();
 	}
 		
 }

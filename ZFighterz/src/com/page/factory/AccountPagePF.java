@@ -23,7 +23,7 @@ public class AccountPagePF {
 	}	
 	
 	@FindBy
-	(xpath = "/html/body/table[1]/tbody/tr[2]/td[1]/div/table/tbody/tr/td[4]")
+	(xpath = "//*[@id=\"navMenu\"]/ul/li[10]/a")
 	WebElement logoutButton;
 	
 	public void logoutButtonMethod()

@@ -2,53 +2,42 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="17759" started-at="2018-06-05T20:03:45Z" finished-at="2018-06-05T20:04:03Z">
-=======
-  <suite name="Default suite" duration-ms="24515" started-at="2018-06-05T19:11:30Z" finished-at="2018-06-05T19:11:54Z">
->>>>>>> branch 'master' of https://github.com/gpsonu/ZFighterZ.git
+  <suite name="Default suite" duration-ms="21130" started-at="2018-06-05T20:27:57Z" finished-at="2018-06-05T20:28:18Z">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="17759" started-at="2018-06-05T20:03:45Z" finished-at="2018-06-05T20:04:03Z">
+    <test name="Default test" duration-ms="21130" started-at="2018-06-05T20:27:57Z" finished-at="2018-06-05T20:28:18Z">
       <class name="com.test.logout.LogOutTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test.logout.LogOutTest@39aeed2f]" name="beforeMethod" is-config="true" duration-ms="4990" started-at="2018-06-05T16:03:45Z" finished-at="2018-06-05T16:03:50Z">
-=======
-    <test name="Default test" duration-ms="24515" started-at="2018-06-05T19:11:30Z" finished-at="2018-06-05T19:11:54Z">
-      <class name="com.test.headerlinks.HeaderLinksTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="beforeMethod" is-config="true" duration-ms="6666" started-at="2018-06-05T15:11:30Z" finished-at="2018-06-05T15:11:37Z">
->>>>>>> branch 'master' of https://github.com/gpsonu/ZFighterZ.git
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test.logout.LogOutTest@39aeed2f]" name="beforeMethod" is-config="true" duration-ms="6564" started-at="2018-06-05T16:27:57Z" finished-at="2018-06-05T16:28:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-<<<<<<< HEAD
-        <test-method status="FAIL" signature="loginTest2p1()[pri:1, instance:com.test.logout.LogOutTest@39aeed2f]" name="loginTest2p1" duration-ms="8908" started-at="2018-06-05T16:03:50Z" finished-at="2018-06-05T16:03:59Z">
+        <test-method status="FAIL" signature="loginTest2p1()[pri:1, instance:com.test.logout.LogOutTest@39aeed2f]" name="loginTest2p1" duration-ms="10803" started-at="2018-06-05T16:28:04Z" finished-at="2018-06-05T16:28:15Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/table[1]/tbody/tr[2]/td[1]/div/table/tbody/tr/td[4]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="navMenu"]/ul/li[10]/a"}
   (Session info: chrome=66.0.3359.181)
-  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'GPSONU', ip: '192.168.1.185', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+System info: host: 'DESKTOP-SUJS60A', ip: '192.168.204.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\GSING\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
-Session ID: f7e7b04545771644686f37f95e3aa0ac
-*** Element info: {Using=xpath, value=/html/body/table[1]/tbody/tr[2]/td[1]/div/table/tbody/tr/td[4]}]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\SAYEM\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
+Session ID: 8c016213e423157a8792b10e27559c0e
+*** Element info: {Using=xpath, value=//*[@id="navMenu"]/ul/li[10]/a}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/table[1]/tbody/tr[2]/td[1]/div/table/tbody/tr/td[4]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="navMenu"]/ul/li[10]/a"}
   (Session info: chrome=66.0.3359.181)
-  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'GPSONU', ip: '192.168.1.185', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+System info: host: 'DESKTOP-SUJS60A', ip: '192.168.204.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\GSING\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
-Session ID: f7e7b04545771644686f37f95e3aa0ac
-*** Element info: {Using=xpath, value=/html/body/table[1]/tbody/tr[2]/td[1]/div/table/tbody/tr/td[4]}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\SAYEM\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
+Session ID: 8c016213e423157a8792b10e27559c0e
+*** Element info: {Using=xpath, value=//*[@id="navMenu"]/ul/li[10]/a}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -97,38 +86,14 @@ Session ID: f7e7b04545771644686f37f95e3aa0ac
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-=======
-        <test-method status="PASS" signature="homeLinkTest()[pri:1, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="homeLinkTest" duration-ms="3218" started-at="2018-06-05T15:11:37Z" finished-at="2018-06-05T15:11:40Z">
->>>>>>> branch 'master' of https://github.com/gpsonu/ZFighterZ.git
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
         </test-method> <!-- loginTest2p1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.logout.LogOutTest@39aeed2f]" name="afterMethod" is-config="true" duration-ms="3837" started-at="2018-06-05T16:03:59Z" finished-at="2018-06-05T16:04:03Z">
-=======
-        </test-method> <!-- homeLinkTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="afterMethod" is-config="true" duration-ms="3717" started-at="2018-06-05T15:11:40Z" finished-at="2018-06-05T15:11:44Z">
->>>>>>> branch 'master' of https://github.com/gpsonu/ZFighterZ.git
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.logout.LogOutTest@39aeed2f]" name="afterMethod" is-config="true" duration-ms="3739" started-at="2018-06-05T16:28:15Z" finished-at="2018-06-05T16:28:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-<<<<<<< HEAD
       </class> <!-- com.test.logout.LogOutTest -->
-=======
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="beforeMethod" is-config="true" duration-ms="5216" started-at="2018-06-05T15:11:44Z" finished-at="2018-06-05T15:11:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="customerLinkTest()[pri:5, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="customerLinkTest" duration-ms="1917" started-at="2018-06-05T15:11:49Z" finished-at="2018-06-05T15:11:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- customerLinkTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="afterMethod" is-config="true" duration-ms="3758" started-at="2018-06-05T15:11:51Z" finished-at="2018-06-05T15:11:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.test.headerlinks.HeaderLinksTest -->
->>>>>>> branch 'master' of https://github.com/gpsonu/ZFighterZ.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

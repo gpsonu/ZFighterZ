@@ -29,7 +29,6 @@ public class FeaturesPagePF
 	
 	
 	// FINDBYS & METHODS - FEATURES PICS ==================================================
-	
 	@FindBy
 	(xpath = "//*[@id=\'second\']/div/div[1]/div[2]/div/ul/li[1]/a/figure/img")
 	WebElement feature1;
@@ -39,6 +38,7 @@ public class FeaturesPagePF
 		feature1.click();
 		
 	}
+	
 	
 	@FindBy
 	(xpath = "//*[@id=\'second\']/div/div[1]/div[2]/div/ul/li[2]/a/figure/img")
@@ -50,6 +50,7 @@ public class FeaturesPagePF
 		
 	}
 	
+	
 	@FindBy
 	(xpath = "//*[@id=\'second\']/div/div[1]/div[2]/div/ul/li[3]/a/figure/img")
 	WebElement feature3;
@@ -59,6 +60,7 @@ public class FeaturesPagePF
 		feature3.click();
 		
 	}
+	
 	
 	@FindBy
 	(xpath = "//img[@src='/img/tour4.jpg']")
@@ -135,16 +137,6 @@ public class FeaturesPagePF
 	
 	
 	@FindBy
-	(css = "#footer > div > div > div.col-lg-4.col-sm-6.col-offset-2.margin.social > ul > li:nth-child(9) > a")
-	WebElement russianLink;
-	
-	public void russianLinkMethod()
-	{
-		russianLink.click();
-	}
-	
-	
-	@FindBy
 	(xpath = "//*[@id=\'footer\']/div/div/div[2]/ul/li[3]/a")
 	WebElement french;
 	
@@ -154,6 +146,7 @@ public class FeaturesPagePF
 
 	}
 	
+	
 	@FindBy
 	(xpath = "//*[@id=\"footer\"]/div/div/div[2]/ul/li[4]/a")
 	WebElement chinese;
@@ -162,5 +155,15 @@ public class FeaturesPagePF
 	{
 		chinese.click();
 	}
-		
+	
+	
+	@FindBy
+	(css = "#footer > div > div > div.col-lg-4.col-sm-6.col-offset-2.margin.social > ul > li:nth-child(9) > a")
+	WebElement russianLink;
+	
+	public void russianLinkMethod()
+	{
+		russianLink.click();
+	}
+			
 }

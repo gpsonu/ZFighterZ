@@ -29,7 +29,7 @@ public class HomePagePF
 	
 	
 	
-	// FINDBYS & METHODS ==================================================
+	// FINDBYS & METHODS - LOGIN ==================================================
 	@FindBy
 	(xpath = "//input[@name='username']")
 	WebElement usernameField;
@@ -59,7 +59,8 @@ public class HomePagePF
 		return loginButton;
 	}
 	
-	
+
+	// FINDBYS & METHODS - HEADER LINKS ==================================================
 	@FindBy
 	(xpath = "//*[@id=\"navbar-collapse\"]/ul/li[1]/a")
 	WebElement featuresLink;

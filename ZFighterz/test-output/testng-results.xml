@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26123" started-at="2018-06-05T18:58:58Z" finished-at="2018-06-05T18:59:24Z">
+  <suite name="Default suite" duration-ms="24515" started-at="2018-06-05T19:11:30Z" finished-at="2018-06-05T19:11:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26123" started-at="2018-06-05T18:58:58Z" finished-at="2018-06-05T18:59:24Z">
+    <test name="Default test" duration-ms="24515" started-at="2018-06-05T19:11:30Z" finished-at="2018-06-05T19:11:54Z">
       <class name="com.test.headerlinks.HeaderLinksTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="beforeMethod" is-config="true" duration-ms="3857" started-at="2018-06-05T14:58:58Z" finished-at="2018-06-05T14:59:01Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="beforeMethod" is-config="true" duration-ms="6666" started-at="2018-06-05T15:11:30Z" finished-at="2018-06-05T15:11:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="homeLinkTest()[pri:1, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="homeLinkTest" duration-ms="7149" started-at="2018-06-05T14:59:01Z" finished-at="2018-06-05T14:59:09Z">
+        <test-method status="PASS" signature="homeLinkTest()[pri:1, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="homeLinkTest" duration-ms="3218" started-at="2018-06-05T15:11:37Z" finished-at="2018-06-05T15:11:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homeLinkTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="afterMethod" is-config="true" duration-ms="3846" started-at="2018-06-05T14:59:09Z" finished-at="2018-06-05T14:59:12Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="afterMethod" is-config="true" duration-ms="3717" started-at="2018-06-05T15:11:40Z" finished-at="2018-06-05T15:11:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="beforeMethod" is-config="true" duration-ms="3113" started-at="2018-06-05T14:59:12Z" finished-at="2018-06-05T14:59:16Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="beforeMethod" is-config="true" duration-ms="5216" started-at="2018-06-05T15:11:44Z" finished-at="2018-06-05T15:11:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="customerLinkTest()[pri:5, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="customerLinkTest" duration-ms="4286" started-at="2018-06-05T14:59:16Z" finished-at="2018-06-05T14:59:20Z">
+        <test-method status="PASS" signature="customerLinkTest()[pri:5, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="customerLinkTest" duration-ms="1917" started-at="2018-06-05T15:11:49Z" finished-at="2018-06-05T15:11:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- customerLinkTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="afterMethod" is-config="true" duration-ms="3848" started-at="2018-06-05T14:59:20Z" finished-at="2018-06-05T14:59:24Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="afterMethod" is-config="true" duration-ms="3758" started-at="2018-06-05T15:11:51Z" finished-at="2018-06-05T15:11:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

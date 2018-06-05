@@ -7,8 +7,8 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions
 (
-		features	= "Features/headerlinks.feature"	,
-		glue 		= "com.test.headerlinks"
+	features	= "Features/headerlinks.feature",
+	glue 		= {"com.test.headerlinks" , "com.utility"}
 )
 
 @Test

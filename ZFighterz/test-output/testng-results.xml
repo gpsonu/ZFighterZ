@@ -1,49 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="41260" started-at="2018-06-05T05:45:15Z" finished-at="2018-06-05T05:45:56Z">
+  <suite name="Default suite" duration-ms="26123" started-at="2018-06-05T18:58:58Z" finished-at="2018-06-05T18:59:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="41260" started-at="2018-06-05T05:45:15Z" finished-at="2018-06-05T05:45:56Z">
-      <class name="com.test.languagelinks.LanguageLinksTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test.languagelinks.LanguageLinksTest@39aeed2f]" name="beforeMethod" is-config="true" duration-ms="8003" started-at="2018-06-05T01:45:15Z" finished-at="2018-06-05T01:45:23Z">
+    <test name="Default test" duration-ms="26123" started-at="2018-06-05T18:58:58Z" finished-at="2018-06-05T18:59:24Z">
+      <class name="com.test.headerlinks.HeaderLinksTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="beforeMethod" is-config="true" duration-ms="3857" started-at="2018-06-05T14:58:58Z" finished-at="2018-06-05T14:59:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="englishLinkTest()[pri:1, instance:com.test.languagelinks.LanguageLinksTest@39aeed2f]" name="englishLinkTest" duration-ms="2635" started-at="2018-06-05T01:45:23Z" finished-at="2018-06-05T01:45:26Z">
+        <test-method status="PASS" signature="homeLinkTest()[pri:1, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="homeLinkTest" duration-ms="7149" started-at="2018-06-05T14:59:01Z" finished-at="2018-06-05T14:59:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- englishLinkTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.languagelinks.LanguageLinksTest@39aeed2f]" name="afterMethod" is-config="true" duration-ms="3721" started-at="2018-06-05T01:45:26Z" finished-at="2018-06-05T01:45:29Z">
+        </test-method> <!-- homeLinkTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="afterMethod" is-config="true" duration-ms="3846" started-at="2018-06-05T14:59:09Z" finished-at="2018-06-05T14:59:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test.languagelinks.LanguageLinksTest@39aeed2f]" name="beforeMethod" is-config="true" duration-ms="6922" started-at="2018-06-05T01:45:29Z" finished-at="2018-06-05T01:45:36Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="beforeMethod" is-config="true" duration-ms="3113" started-at="2018-06-05T14:59:12Z" finished-at="2018-06-05T14:59:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="spanishLinkTest()[pri:2, instance:com.test.languagelinks.LanguageLinksTest@39aeed2f]" name="spanishLinkTest" duration-ms="2444" started-at="2018-06-05T01:45:36Z" finished-at="2018-06-05T01:45:39Z">
+        <test-method status="PASS" signature="customerLinkTest()[pri:5, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="customerLinkTest" duration-ms="4286" started-at="2018-06-05T14:59:16Z" finished-at="2018-06-05T14:59:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- spanishLinkTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.languagelinks.LanguageLinksTest@39aeed2f]" name="afterMethod" is-config="true" duration-ms="3693" started-at="2018-06-05T01:45:39Z" finished-at="2018-06-05T01:45:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test.languagelinks.LanguageLinksTest@39aeed2f]" name="beforeMethod" is-config="true" duration-ms="7412" started-at="2018-06-05T01:45:43Z" finished-at="2018-06-05T01:45:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="russianLinkTest()[pri:3, instance:com.test.languagelinks.LanguageLinksTest@39aeed2f]" name="russianLinkTest" duration-ms="2702" started-at="2018-06-05T01:45:50Z" finished-at="2018-06-05T01:45:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- russianLinkTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.languagelinks.LanguageLinksTest@39aeed2f]" name="afterMethod" is-config="true" duration-ms="3704" started-at="2018-06-05T01:45:53Z" finished-at="2018-06-05T01:45:56Z">
+        </test-method> <!-- customerLinkTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="afterMethod" is-config="true" duration-ms="3848" started-at="2018-06-05T14:59:20Z" finished-at="2018-06-05T14:59:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.test.languagelinks.LanguageLinksTest -->
+      </class> <!-- com.test.headerlinks.HeaderLinksTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

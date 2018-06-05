@@ -31,7 +31,7 @@ public class LanguageLinksTest
 	
 	
 	// TESTS ==================================================
-	@Test
+	@Test (priority = 1)
 	public void englishLinkTest() throws InterruptedException
 	{
 		FeaturesPagePF ob1 = new FeaturesPagePF(driver);
@@ -44,7 +44,7 @@ public class LanguageLinksTest
 	}
 	
 	
-	@Test
+	@Test (priority = 2)
 	public void spanishLinkTest() throws InterruptedException
 	{
 		FeaturesPagePF ob1 = new FeaturesPagePF(driver);
@@ -57,7 +57,7 @@ public class LanguageLinksTest
 	}
 	
 	
-	@Test
+	@Test (priority = 3)
 	public void russianLinkTest() throws InterruptedException
 	{
 		FeaturesPagePF ob1 = new FeaturesPagePF(driver);

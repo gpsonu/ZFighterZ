@@ -33,7 +33,7 @@ public class FeaturesPicsTest
 	
 	// TESTS ==================================================
 	@Test
-	public void featureTest1() throws InterruptedException
+	public void featuresPicsTest() throws InterruptedException
 	{
 		HomePagePF		ob1 = new HomePagePF		(driver)	;
 		FeaturesPagePF	ob2 = new FeaturesPagePF	(driver)	;
@@ -45,7 +45,7 @@ public class FeaturesPicsTest
 		
 		Thread.sleep(1000);
 		if (driver.findElement(By.xpath("//img[@src='/img/company1.jpg']")).isDisplayed())
-		{	System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");	}
+		{	System.out.println();	}
 		else
 		{	ob1.featuresLinkMethod().click();	}	// without this the test will show passed even if the image doesn't enlarge
 		
@@ -59,7 +59,7 @@ public class FeaturesPicsTest
 		
 		Thread.sleep(1000);
 		if (driver.findElement(By.xpath("//img[@src='/img/deals1.jpg']")).isDisplayed())
-		{	System.out.println("/////////////////////////////////////////////////////");	}
+		{	System.out.println();	}
 		else
 		{	ob1.featuresLinkMethod().click();	}	// without this the test will show passed even if the image doesn't enlarge
 
@@ -74,7 +74,7 @@ public class FeaturesPicsTest
 		
 		Thread.sleep(1000);
 		if (driver.findElement(By.xpath("//img[@src='/img/deals3.jpg']")).isDisplayed())
-		{	System.out.println("\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");	}
+		{	System.out.println();	}
 		else
 		{	ob1.featuresLinkMethod().click();	}	// without this the test will show passed even if the image doesn't enlarge
 		
@@ -88,7 +88,7 @@ public class FeaturesPicsTest
 		
 		Thread.sleep(1000);
 		if (driver.findElement(By.xpath("//img[@src='/img/sync1.jpg']")).isDisplayed())
-		{	System.out.println("\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");	}
+		{	System.out.println();	}
 		else
 		{	ob1.featuresLinkMethod().click();	}	// without this the test will show passed even if the image doesn't enlarge
 		

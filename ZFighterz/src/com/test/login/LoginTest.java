@@ -31,7 +31,7 @@ public class LoginTest
 	
 	
 	// TESTS ==================================================
-	@Test
+	@Test (priority = 1)
 	public void loginTest2p1() throws InterruptedException
 	{
 		HomePagePF ob1 = new HomePagePF(driver);
@@ -48,7 +48,7 @@ public class LoginTest
 	}
 	
 	
-	@Test
+	@Test (priority = 2)
 	public void loginTest2p5() throws InterruptedException
 	{
 		HomePagePF ob1 = new HomePagePF(driver);

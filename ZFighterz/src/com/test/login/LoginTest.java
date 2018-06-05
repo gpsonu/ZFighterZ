@@ -67,7 +67,7 @@ public class LoginTest
 				
 		Thread.sleep(1000);
 		ob1.usernameFieldMethod().sendKeys("zfighterz");
-		ob1.passwordFieldMethod().sendKeys("zf123z");
+		ob1.passwordFieldMethod().sendKeys("zf123zh");
 		
 		Thread.sleep(1000);
 		ob1.loginButtonMethod().click();

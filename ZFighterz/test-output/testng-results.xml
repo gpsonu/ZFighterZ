@@ -2,15 +2,26 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="17759" started-at="2018-06-05T20:03:45Z" finished-at="2018-06-05T20:04:03Z">
+=======
+  <suite name="Default suite" duration-ms="24515" started-at="2018-06-05T19:11:30Z" finished-at="2018-06-05T19:11:54Z">
+>>>>>>> branch 'master' of https://github.com/gpsonu/ZFighterZ.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="17759" started-at="2018-06-05T20:03:45Z" finished-at="2018-06-05T20:04:03Z">
       <class name="com.test.logout.LogOutTest">
         <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test.logout.LogOutTest@39aeed2f]" name="beforeMethod" is-config="true" duration-ms="4990" started-at="2018-06-05T16:03:45Z" finished-at="2018-06-05T16:03:50Z">
+=======
+    <test name="Default test" duration-ms="24515" started-at="2018-06-05T19:11:30Z" finished-at="2018-06-05T19:11:54Z">
+      <class name="com.test.headerlinks.HeaderLinksTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="beforeMethod" is-config="true" duration-ms="6666" started-at="2018-06-05T15:11:30Z" finished-at="2018-06-05T15:11:37Z">
+>>>>>>> branch 'master' of https://github.com/gpsonu/ZFighterZ.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="loginTest2p1()[pri:1, instance:com.test.logout.LogOutTest@39aeed2f]" name="loginTest2p1" duration-ms="8908" started-at="2018-06-05T16:03:50Z" finished-at="2018-06-05T16:03:59Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
@@ -86,14 +97,38 @@ Session ID: f7e7b04545771644686f37f95e3aa0ac
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+        <test-method status="PASS" signature="homeLinkTest()[pri:1, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="homeLinkTest" duration-ms="3218" started-at="2018-06-05T15:11:37Z" finished-at="2018-06-05T15:11:40Z">
+>>>>>>> branch 'master' of https://github.com/gpsonu/ZFighterZ.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- loginTest2p1 -->
         <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.logout.LogOutTest@39aeed2f]" name="afterMethod" is-config="true" duration-ms="3837" started-at="2018-06-05T16:03:59Z" finished-at="2018-06-05T16:04:03Z">
+=======
+        </test-method> <!-- homeLinkTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="afterMethod" is-config="true" duration-ms="3717" started-at="2018-06-05T15:11:40Z" finished-at="2018-06-05T15:11:44Z">
+>>>>>>> branch 'master' of https://github.com/gpsonu/ZFighterZ.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
+<<<<<<< HEAD
       </class> <!-- com.test.logout.LogOutTest -->
+=======
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="beforeMethod" is-config="true" duration-ms="5216" started-at="2018-06-05T15:11:44Z" finished-at="2018-06-05T15:11:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="customerLinkTest()[pri:5, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="customerLinkTest" duration-ms="1917" started-at="2018-06-05T15:11:49Z" finished-at="2018-06-05T15:11:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerLinkTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.headerlinks.HeaderLinksTest@39aeed2f]" name="afterMethod" is-config="true" duration-ms="3758" started-at="2018-06-05T15:11:51Z" finished-at="2018-06-05T15:11:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.test.headerlinks.HeaderLinksTest -->
+>>>>>>> branch 'master' of https://github.com/gpsonu/ZFighterZ.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

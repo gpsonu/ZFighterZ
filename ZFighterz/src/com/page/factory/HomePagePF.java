@@ -31,7 +31,7 @@ public class HomePagePF
 	
 	// FINDBYS & METHODS - LOGIN ==================================================
 	@FindBy
-	(xpath = "//input[@name='username']")
+	(xpath = "//input[@name='username']") 
 	WebElement usernameField;
 	
 	public WebElement usernameFieldMethod()

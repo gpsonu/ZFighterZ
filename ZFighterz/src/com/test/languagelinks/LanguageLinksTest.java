@@ -76,7 +76,7 @@ public class LanguageLinksTest
 		FeaturesPagePF ob1 = new FeaturesPagePF(driver);
 		
 		Thread.sleep(1000);
-		ob1.taiwanLinkMethod();
+		ob1.taiwanLinkMethod();    
 		
 		String url = driver.getCurrentUrl();
 		Assert.assertEquals(url, "https://tw.crmpro.com/index.html");

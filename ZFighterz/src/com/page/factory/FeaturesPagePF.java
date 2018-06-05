@@ -165,5 +165,23 @@ public class FeaturesPagePF
 	{
 		russianLink.click();
 	}
+	
+	@FindBy
+	(xpath = "//*[@id=\"footer\"]/div/div/div[2]/ul/li[5]/a")
+	WebElement taiwanLink;
+	
+	public void taiwanLinkMethod()
+	{
+		taiwanLink.click();
+	}
 			
+	@FindBy
+	(xpath = "//*[@id=\"footer\"]/div/div/div[2]/ul/li[6]/a")
+	WebElement arabicLink;
+	
+	public void arabicLinkMethod()
+	{
+		arabicLink.click();
+	}
+	
 }

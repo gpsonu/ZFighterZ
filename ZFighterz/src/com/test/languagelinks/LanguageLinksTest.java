@@ -70,6 +70,31 @@ public class LanguageLinksTest
 	}
 	
 	
+	@Test (priority = 5)
+	public void taiwanLinkTest() throws InterruptedException
+	{
+		FeaturesPagePF ob1 = new FeaturesPagePF(driver);
+		
+		Thread.sleep(1000);
+		ob1.taiwanLinkMethod();
+		
+		String url = driver.getCurrentUrl();
+		Assert.assertEquals(url, "https://tw.crmpro.com/index.html");
+	}
+	
+	
+	@Test (priority = 6)
+	public void arabicLinkTest() throws InterruptedException
+	{
+		FeaturesPagePF ob1 = new FeaturesPagePF(driver);
+		
+		Thread.sleep(1000);
+		ob1.arabicLinkMethod();
+		
+		String url = driver.getCurrentUrl();
+		Assert.assertEquals(url, "https://ar.crmpro.com/index.html");
+	}
+	
 	
 	// AFTERS ==================================================
 	@AfterMethod

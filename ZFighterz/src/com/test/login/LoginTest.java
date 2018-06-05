@@ -60,7 +60,21 @@ public class LoginTest
 		Assert.assertEquals(url, "CRMPRO");	
 	}
 	
-	
+	@Test (priority = 3)
+	public void loginTest2p3() throws InterruptedException
+	{
+		HomePagePF ob1 = new HomePagePF(driver);
+				
+		Thread.sleep(1000);
+		ob1.usernameFieldMethod().sendKeys("zfighterz");
+		ob1.passwordFieldMethod().sendKeys("zf123zh");
+		
+		Thread.sleep(1000);
+		ob1.loginButtonMethod().click();
+		
+		String url = driver.getTitle();
+		Assert.assertEquals(url, "CRMPRO");	
+	}
 	
 	// AFTERS ==================================================
 	@AfterMethod

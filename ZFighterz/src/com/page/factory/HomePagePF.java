@@ -69,4 +69,13 @@ public class HomePagePF
 		return featuresLink;
 	}
 		
+	@FindBy
+	(xpath = "//*[@id=\"navbar-collapse\"]/ul/li[4]/a")
+	WebElement customerLink;
+	
+	public WebElement customerLinkMethod()
+	{
+		return customerLink;
+	}
+	
 }

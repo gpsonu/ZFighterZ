@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13976" started-at="2018-06-03T20:18:05Z" finished-at="2018-06-03T20:18:19Z">
+  <suite name="Default suite" duration-ms="20645" started-at="2018-06-05T05:20:51Z" finished-at="2018-06-05T05:21:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13976" started-at="2018-06-03T20:18:05Z" finished-at="2018-06-03T20:18:19Z">
-      <class name="com.tests.features.FeaturesTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.tests.features.FeaturesTest@39aeed2f]" name="beforeMethod" is-config="true" duration-ms="4248" started-at="2018-06-03T16:18:05Z" finished-at="2018-06-03T16:18:09Z">
+    <test name="Default test" duration-ms="20645" started-at="2018-06-05T05:20:51Z" finished-at="2018-06-05T05:21:11Z">
+      <class name="com.test.featurespics.FeaturesPicsTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test.featurespics.FeaturesPicsTest@39aeed2f]" name="beforeMethod" is-config="true" duration-ms="8859" started-at="2018-06-05T01:20:51Z" finished-at="2018-06-05T01:20:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="featureTest1()[pri:0, instance:com.tests.features.FeaturesTest@39aeed2f]" name="featureTest1" duration-ms="5972" started-at="2018-06-03T16:18:09Z" finished-at="2018-06-03T16:18:15Z">
+        <test-method status="FAIL" signature="featureTest1()[pri:0, instance:com.test.featurespics.FeaturesPicsTest@39aeed2f]" name="featureTest1" duration-ms="8036" started-at="2018-06-05T01:20:59Z" finished-at="2018-06-05T01:21:07Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[unknown error: Element <img class="img-responsive" src="/img/tour1.jpg" alt=""> is not clickable at point (284, 441). Other element would receive the click: <div id="preloader" style="opacity: 0.0128444;">...</div>
+              <![CDATA[unknown error: Element <img class="img-responsive" src="/img/tour6.jpg" alt=""> is not clickable at point (1064, 480). Other element would receive the click: <iframe allowfullscreen="" class="intercom-borderless-frame" name="intercom-borderless-frame" title="Intercom Live Chat" tabindex="-1" style="height: 250px;"></iframe>
   (Session info: chrome=66.0.3359.181)
   (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -22,10 +22,10 @@ Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.1
 System info: host: 'DESKTOP-SUJS60A', ip: '192.168.204.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\SAYEM\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
-Session ID: 57730163e6d679c43910ce517729a15a]]>
+Session ID: 179e84f61bcfe7998fa7ee04183b6421]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <img class="img-responsive" src="/img/tour1.jpg" alt=""> is not clickable at point (284, 441). Other element would receive the click: <div id="preloader" style="opacity: 0.0128444;">...</div>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <img class="img-responsive" src="/img/tour6.jpg" alt=""> is not clickable at point (1064, 480). Other element would receive the click: <iframe allowfullscreen="" class="intercom-borderless-frame" name="intercom-borderless-frame" title="Intercom Live Chat" tabindex="-1" style="height: 250px;"></iframe>
   (Session info: chrome=66.0.3359.181)
   (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -33,7 +33,7 @@ Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.1
 System info: host: 'DESKTOP-SUJS60A', ip: '192.168.204.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\SAYEM\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
-Session ID: 57730163e6d679c43910ce517729a15a
+Session ID: 179e84f61bcfe7998fa7ee04183b6421
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -54,8 +54,8 @@ Session ID: 57730163e6d679c43910ce517729a15a
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.page.factory.FeaturesPagePF.feature1Method(FeaturesPagePF.java:31)
-	at com.tests.features.FeaturesTest.featureTest1(FeaturesTest.java:44)
+	at com.page.factory.FeaturesPagePF.feature6Method(FeaturesPagePF.java:58)
+	at com.test.featurespics.FeaturesPicsTest.featureTest1(FeaturesPicsTest.java:72)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -86,11 +86,11 @@ Session ID: 57730163e6d679c43910ce517729a15a
           <reporter-output>
           </reporter-output>
         </test-method> <!-- featureTest1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.tests.features.FeaturesTest@39aeed2f]" name="afterMethod" is-config="true" duration-ms="3725" started-at="2018-06-03T16:18:15Z" finished-at="2018-06-03T16:18:19Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.featurespics.FeaturesPicsTest@39aeed2f]" name="afterMethod" is-config="true" duration-ms="3726" started-at="2018-06-05T01:21:07Z" finished-at="2018-06-05T01:21:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.tests.features.FeaturesTest -->
+      </class> <!-- com.test.featurespics.FeaturesPicsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

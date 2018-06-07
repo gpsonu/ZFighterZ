@@ -1,87 +1,71 @@
 package com.test.login;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 import com.page.factory.HomePagePF;
+import com.utility.Hook;
+
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 
 public class LoginTest 
 {
-	// INSTACE VARIABLES ==================================================
-	WebDriver driver = null;
-	
-	
-	
-	// BEFORES ==================================================
-	@BeforeMethod
-	public void beforeMethod()
-	{
-		System.setProperty("wedsriver.chrome.driver", "chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
+	WebDriver driver = Hook.getChromeDriver();
+	HomePagePF ob1 = new HomePagePF(driver);
 		
-		HomePagePF ob1 = new HomePagePF(driver);
+	
+	
+	
+	@Given("^I am on the CRM homepage$")
+	public void i_am_on_the_CRM_homepage() throws Throwable 
+	{
 		ob1.getURL();
 	}
+
 	
 	
 	
-	// TESTS ==================================================
-	@Test (priority = 1)
-	public void loginTest2p1() throws InterruptedException
+	@And("^I entered correct \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void i_entered_correct_and(String arg1, String arg2) throws Throwable 
 	{
-		HomePagePF ob1 = new HomePagePF(driver);
-				
 		Thread.sleep(1000);
-		ob1.usernameFieldMethod().sendKeys("zfighterz");
-		ob1.passwordFieldMethod().sendKeys("zf123zf");
-		
+		ob1.usernameFieldMethod().sendKeys(arg1);
+		ob1.passwordFieldMethod().sendKeys(arg2);
+	}
+
+	@When("^I click on login$")
+	public void i_click_on_login() throws Throwable 
+	{
 		Thread.sleep(1000);
-		ob1.loginButtonMethod().click();
-		
+		ob1.loginButtonMethod().click();	
+	}
+
+	@Then("^I should be logged in$")
+	public void i_should_be_logged_in() throws Throwable 
+	{
 		String url = driver.getTitle();
 		Assert.assertEquals(url, "CRMPRO");	
 	}
+
 	
 	
-	@Test (priority = 2)
-	public void loginTest2p5() throws InterruptedException
+	
+	@And("^I entered incorrect \"([^\"]*)\" and/or \"([^\"]*)\"$")
+	public void i_entered_incorrect_and_or(String arg1, String arg2) throws Throwable 
 	{
-		HomePagePF ob1 = new HomePagePF(driver);
-				
 		Thread.sleep(1000);
-		ob1.loginButtonMethod().click();
-		
-		String url = driver.getTitle();
-		Assert.assertEquals(url, "CRMPRO");	
+		ob1.usernameFieldMethod().sendKeys(arg1);
+		ob1.passwordFieldMethod().sendKeys(arg2);
 	}
-	
-	@Test (priority = 3)
-	public void loginTest2p3() throws InterruptedException
+
+	@Then("^The homepage should refresh and I should NOT be logged in$")
+	public void the_homepage_should_refresh_and_i_should_NOT_be_logged_in() throws Throwable 
 	{
-		HomePagePF ob1 = new HomePagePF(driver);
-				
-		Thread.sleep(1000);
-		ob1.usernameFieldMethod().sendKeys("zfighterz");
-		ob1.passwordFieldMethod().sendKeys("zf123zh");
-		
-		Thread.sleep(1000);
-		ob1.loginButtonMethod().click();
-		
-		String url = driver.getTitle();
-		Assert.assertEquals(url, "CRMPRO");	
-	}
-	
-	// AFTERS ==================================================
-	@AfterMethod
-	public void afterMethod() throws InterruptedException
-	{
-		Thread.sleep(3000);
-		driver.quit();
-	}
+		String url = driver.getCurrentUrl();
+		Assert.assertEquals(url, "https://www.freecrm.com/index.html?e=1");	
+	}	
 
 }

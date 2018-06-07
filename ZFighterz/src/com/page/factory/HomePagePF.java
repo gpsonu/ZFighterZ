@@ -7,12 +7,11 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePagePF 
 {
-	// INSTACE VARIABLES ==================================================
+	// INSTACE VARIABLES //////////////////////////////////////////////////
 	WebDriver driver;
 	
 	
-	
-	// CONSTRUCTORS ==================================================
+	// CONSTRUCTORS //////////////////////////////////////////////////
 	public HomePagePF (WebDriver d)
 	{
 		this.driver = d;
@@ -20,8 +19,7 @@ public class HomePagePF
 	}
 	
 	
-	
-	// URLS ==================================================
+	// URLS //////////////////////////////////////////////////
 	public void getURL()
 	{
 		driver.get("https://www.freecrm.com/index.html");
@@ -29,7 +27,8 @@ public class HomePagePF
 	
 	
 	
-	// FINDBYS & METHODS - LOGIN ==================================================
+	
+	// FINDBYS & METHODS - LOGIN //////////////////////////////////////////////////
 	@FindBy
 	(xpath = "//input[@name='username']") 
 	WebElement usernameField;
@@ -59,8 +58,10 @@ public class HomePagePF
 		return loginButton;
 	}
 	
+	
+	
 
-	// FINDBYS & METHODS - HEADER LINKS ==================================================
+	// FINDBYS & METHODS - HEADER LINKS //////////////////////////////////////////////////
 	@FindBy
 	(xpath = "//*[@id=\"navbar-collapse\"]/ul/li[1]/a")
 	WebElement featuresLink;
@@ -70,6 +71,27 @@ public class HomePagePF
 		return featuresLink;
 	}
 		
+	
+	@FindBy
+	(css = "#navbar-collapse > ul > li:nth-child(2) > a")
+	WebElement signUpLink;
+	
+	public WebElement signUpLinkMethod()
+	{
+		return signUpLink;
+	}
+	
+	
+	@FindBy
+	(xpath = "//*[@id=\"navbar-collapse\"]/ul/li[3]/a")
+	WebElement pricingLink;
+	
+	public WebElement pricingLinkMethod()
+	{
+		return pricingLink;
+	}
+	
+	
 	@FindBy
 	(xpath = "//*[@id=\"navbar-collapse\"]/ul/li[4]/a")
 	WebElement customerLink;
@@ -77,6 +99,16 @@ public class HomePagePF
 	public WebElement customerLinkMethod()
 	{
 		return customerLink;
+	}
+	
+	
+	@FindBy
+	(css = "#navbar-collapse > ul > li:nth-child(5) > a")
+	WebElement contactLink;
+	
+	public WebElement contactLinkMethod()
+	{
+		return contactLink;
 	}
 	
 }

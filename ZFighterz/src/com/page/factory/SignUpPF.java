@@ -7,12 +7,11 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SignUpPF {
 	
-	// INSTACE VARIABLES ==================================================
+	// INSTACE VARIABLES //////////////////////////////////////////////////
 	WebDriver driver;
+		
 	
-	
-	
-	// CONSTRUCTORS ==================================================
+	// CONSTRUCTORS //////////////////////////////////////////////////
 	public SignUpPF (WebDriver d)
 	{
 		this.driver = d;
@@ -20,15 +19,16 @@ public class SignUpPF {
 	}
 	
 	
-	
-	// URLS ==================================================
+	// URLS //////////////////////////////////////////////////
 	public void getURL()
 	{
 		driver.get("https://www.freecrm.com/register/");
 	}
 	
 	
-	// FINDBYS & METHODS - Sign Up Fields =================================================
+	
+	
+	// FINDBYS & METHODS - Sign Up Fields //////////////////////////////////////////////////
 	@FindBy
 	(xpath = "//*[@id=\'payment_plan_id\']")
 	
@@ -128,5 +128,3 @@ public class SignUpPF {
 	}
 		
 }
-
-

@@ -41,6 +41,21 @@ public class FeaturesPicsTest
 		
 		// =========================
 		Thread.sleep(1000);
+		ob2.feature6Method();
+		driver.findElement(By.xpath("//*[@id=\"second\"]/div/div[2]/ul/li[3]/a/figure/img")).click();
+		
+		Thread.sleep(1000);
+		if (driver.findElement(By.xpath("//img[@src='/img/deals3.jpg']")).isDisplayed())
+		{	System.out.println();	}
+		else
+		{	ob1.featuresLinkMethod().click();	}	// without this the test will show passed even if the image doesn't enlarge
+		
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//*[@id=\"gallery_6\"]/div/div/div/div[1]/button[2]")).click();	// closes image
+		
+		
+		// =========================
+		Thread.sleep(1000);
 		ob2.feature4Method();
 		
 		Thread.sleep(1000);
@@ -65,21 +80,6 @@ public class FeaturesPicsTest
 
 		Thread.sleep(1000);
 		driver.findElement(By.cssSelector("#gallery_5 > div > div > div > div:nth-child(1) > button.back")).click();	// closes image
-		
-		
-		// =========================
-		/*Thread.sleep(1000);
-		ob2.feature6Method();
-		driver.findElement(By.xpath("//*[@id=\"second\"]/div/div[2]/ul/li[3]/a/figure/img")).click();
-		
-		Thread.sleep(1000);
-		if (driver.findElement(By.xpath("//img[@src='/img/deals3.jpg']")).isDisplayed())
-		{	System.out.println();	}
-		else
-		{	ob1.featuresLinkMethod().click();	}	// without this the test will show passed even if the image doesn't enlarge
-		
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id=\"gallery_6\"]/div/div/div/div[1]/button[2]")).click();	// closes image*/
 		
 		
 		// =========================

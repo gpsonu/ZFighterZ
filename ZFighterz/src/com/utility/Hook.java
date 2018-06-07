@@ -10,6 +10,7 @@ public class Hook
 {
 	public static WebDriver driver;
 	
+	
 	@Before
 	public void setupChrome()
 	{
@@ -19,15 +20,20 @@ public class Hook
 	}
 	
 	
+	
+	
 	public static WebDriver getChromeDriver()
 	{
 		return driver;
 	}
 	
 	
+	
+	
 	@After
-	public void closeChrome()
+	public void closeChrome() throws InterruptedException
 	{
+		Thread.sleep(2000);
 		driver.quit();
 	}
 }

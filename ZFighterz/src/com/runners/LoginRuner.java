@@ -7,13 +7,13 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions
 (
-	features	= "Features/headerlinks.feature",
+	features	= "Features/login.feature",
 	
-	glue 		= {"com.test.headerlinks" , "com.utility"}
+	glue		= {"com.test.login" , "com.utility"}
 )
 
 @Test
-public class HeaderLinksRunner extends AbstractTestNGCucumberTests
+public class LoginRuner extends AbstractTestNGCucumberTests
 {
-	
+
 }

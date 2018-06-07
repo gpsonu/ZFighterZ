@@ -7,28 +7,28 @@ import org.openqa.selenium.support.PageFactory;
 
 public class FeaturesPagePF 
 {
-	// INSTACE VARIABLES ==================================================
+	// INSTACE VARIABLES //////////////////////////////////////////////////
 	WebDriver driver;
+		
 	
-	
-	
-	// CONSTRUCTORS ==================================================
+	// CONSTRUCTORS //////////////////////////////////////////////////
 	public FeaturesPagePF (WebDriver d)
 	{
 		this.driver = d;
 		PageFactory.initElements(driver, this);
 	}
+		
 	
-	
-	
-	// URLS ==================================================
+	// URLS //////////////////////////////////////////////////
 	public void getURL()
 	{
 		driver.get("https://www.freecrm.com/features.html");
 	}
 	
 	
-	// FINDBYS & METHODS - FEATURES PICS ==================================================
+	
+	
+	// FINDBYS & METHODS - FEATURES PICS //////////////////////////////////////////////////
 	@FindBy
 	(xpath = "//*[@id=\'second\']/div/div[1]/div[2]/div/ul/li[1]/a/figure/img")
 	WebElement feature1;
@@ -103,7 +103,8 @@ public class FeaturesPagePF
 	
 	
 	
-	// FINDBYS & METHODS - HEADER LINKS ==================================================
+	
+	// FINDBYS & METHODS - HEADER LINKS //////////////////////////////////////////////////
 	@FindBy
 	(xpath = "//*[@id=\"navbar-collapse\"]/ul/li[1]/a")
 	WebElement homeLink;
@@ -115,7 +116,8 @@ public class FeaturesPagePF
 	
 	
 	
-	// FINDBYS & METHODS - LANGUAGE LINKS ==================================================
+	
+	// FINDBYS & METHODS - LANGUAGE LINKS //////////////////////////////////////////////////
 	@FindBy
 	(css = "#footer > div > div > div.col-lg-4.col-sm-6.col-offset-2.margin.social > ul > li:nth-child(1) > a")
 	WebElement englishLink;

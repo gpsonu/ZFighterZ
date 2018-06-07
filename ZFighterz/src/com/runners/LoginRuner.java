@@ -7,7 +7,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions
 (
-	features	= "Features/login.feature",
+	features	= "Features/02login.feature",
 	
 	glue		= {"com.test.login" , "com.utility"}
 )

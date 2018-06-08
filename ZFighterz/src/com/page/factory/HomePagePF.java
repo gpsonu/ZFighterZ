@@ -111,4 +111,18 @@ public class HomePagePF
 		return contactLink;
 	}
 	
+	
+	
+	
+	// FINDBYS & METHODS - LOGO LINK //////////////////////////////////////////////////
+	@FindBy
+	(css = "body > div.navbar.navbar-default.navbar-fixed-top > div > div.navbar-header > a")
+	WebElement logoLink;
+	
+	public void logoLinkMethod()
+	{
+		logoLink.click();
+	}
+
+	
 }

@@ -2,109 +2,137 @@ package com.test.featurespics;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 import com.page.factory.FeaturesPagePF;
 import com.page.factory.HomePagePF;
+import com.utility.Hook;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 
 public class FeaturesPicsTest 
 {
-	// INSTACE VARIABLES ==================================================
-	WebDriver driver = null;
+	WebDriver driver = Hook.getChromeDriver();
+	FeaturesPagePF ob1 = new FeaturesPagePF(driver);
+	HomePagePF ob2 = new HomePagePF(driver);
+
+
 	
 	
-	
-	// BEFORES ==================================================
-	@BeforeMethod
-	public void beforeMethod()
+	@Given("^I am on the FEATURES page$")
+	public void i_am_on_the_FEATURES_page() throws Throwable 
 	{
-		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		
-		FeaturesPagePF ob1 = new FeaturesPagePF(driver);
 		ob1.getURL();
 	}
-	
-	
-	
-	// TESTS ==================================================
-	@Test
-	public void featuresPicsTest() throws InterruptedException
-	{
-		HomePagePF		ob1 = new HomePagePF		(driver)	;
-		FeaturesPagePF	ob2 = new FeaturesPagePF	(driver)	;
 
-		
-		// =========================
+	
+	
+	
+	@When("^I click on the FOURTH FEATURE PIC$")
+	public void i_click_on_the_FOURTH_FEATURE_PIC() throws Throwable 
+	{
 		Thread.sleep(1000);
-		ob2.feature6Method();
-		driver.findElement(By.xpath("//*[@id=\"second\"]/div/div[2]/ul/li[3]/a/figure/img")).click();
-		
-		Thread.sleep(1000);
-		if (driver.findElement(By.xpath("//img[@src='/img/deals3.jpg']")).isDisplayed())
-		{	System.out.println();	}
-		else
-		{	ob1.featuresLinkMethod().click();	}	// without this the test will show passed even if the image doesn't enlarge
-		
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id=\"gallery_6\"]/div/div/div/div[1]/button[2]")).click();	// closes image
-		
-		
-		// =========================
-		Thread.sleep(1000);
-		ob2.feature4Method();
-		
+		ob1.feature4Method();
+	}
+
+	@Then("^the FOURTH FEATURE PIC should ENLARGE$")
+	public void the_FOURTH_FEATURE_PIC_should_ENLARGE() throws Throwable 
+	{
 		Thread.sleep(1000);
 		if (driver.findElement(By.xpath("//img[@src='/img/company1.jpg']")).isDisplayed())
 		{	System.out.println();	}
 		else
-		{	ob1.featuresLinkMethod().click();	}	// without this the test will show passed even if the image doesn't enlarge
-		
+		{	ob2.featuresLinkMethod().click();	}	// without this the test will show passed even if the image doesn't enlarge
+	}
+
+	@When("^I click on the X for the FOURTH FEATURE PIC$")
+	public void i_click_on_the_X_for_the_FOURTH_FEATURE_PIC() throws Throwable 
+	{
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id=\"gallery_4\"]/div/div/div/div[1]/button[2]")).click();	// closes image
-		
-		
-		// =========================
+		driver.findElement(By.xpath("//*[@id=\"gallery_4\"]/div/div/div/div[1]/button[2]")).click();	
+	}
+	
+	@Then("^the FOURTH FEATURE PIC should MINIMIZE$")
+	public void the_FOURTH_FEATURE_PIC_should_MINIMIZE() throws Throwable 
+	{
 		Thread.sleep(1000);
-		ob2.feature5Method();
-		
+		if (!driver.findElement(By.xpath("//img[@src='/img/company1.jpg']")).isDisplayed())
+		{	System.out.println();	}
+		else
+		{	ob2.featuresLinkMethod().click();	}	// without this the test will show passed even if the image doesn't enlarge
+	}
+
+	
+	
+	@When("^I click on the FIFTH FEATURE PIC$")
+	public void i_click_on_the_FIFTH_FEATURE_PIC() throws Throwable 
+	{
+		Thread.sleep(1000);
+		ob1.feature5Method();
+	}
+
+	@Then("^the FIFTH FEATURE PIC should ENLARGE$")
+	public void the_FIFTH_FEATURE_PIC_should_ENLARGE() throws Throwable 
+	{
 		Thread.sleep(1000);
 		if (driver.findElement(By.xpath("//img[@src='/img/deals1.jpg']")).isDisplayed())
 		{	System.out.println();	}
 		else
-		{	ob1.featuresLinkMethod().click();	}	// without this the test will show passed even if the image doesn't enlarge
-
+		{	ob2.featuresLinkMethod().click();	}	// without this the test will show passed even if the image doesn't enlarge
+	}
+	
+	@When("^I click on the X for the FIFTH FEATURE PIC$")
+	public void i_click_on_the_X_for_the_FIFTH_FEATURE_PIC() throws Throwable 
+	{
 		Thread.sleep(1000);
 		driver.findElement(By.cssSelector("#gallery_5 > div > div > div > div:nth-child(1) > button.back")).click();	// closes image
-		
-		
-		// =========================
+	}
+
+	@Then("^the FIFTH FEATURE PIC should MINIMIZE$")
+	public void the_FIFTH_FEATURE_PIC_should_MINIMIZE() throws Throwable 
+	{
 		Thread.sleep(1000);
-		ob2.feature13Method();
-		
+		if (!driver.findElement(By.xpath("//img[@src='/img/deals1.jpg']")).isDisplayed())
+		{	System.out.println();	}
+		else
+		{	ob2.featuresLinkMethod().click();	}	// without this the test will show passed even if the image doesn't enlarge
+	}
+
+	
+	
+	@When("^I click on the THIRTEENTH FEATURE PIC$")
+	public void i_click_on_the_THIRTEENTH_FEATURE_PIC() throws Throwable 
+	{
+		Thread.sleep(1000);
+		ob1.feature13Method();
+	}
+
+	@Then("^the THIRTEENTH FEATURE PIC should ENLARGE$")
+	public void the_THIRTEENTH_FEATURE_PIC_should_ENLARGE() throws Throwable 
+	{
 		Thread.sleep(1000);
 		if (driver.findElement(By.xpath("//img[@src='/img/sync1.jpg']")).isDisplayed())
 		{	System.out.println();	}
 		else
-		{	ob1.featuresLinkMethod().click();	}	// without this the test will show passed even if the image doesn't enlarge
-		
-		Thread.sleep(1000);
-		driver.findElement(By.cssSelector("#gallery_13 > div > div > div > div:nth-child(1) > button.back")).click();	// closes image
-		
+		{	ob2.featuresLinkMethod().click();	}	// without this the test will show passed even if the image doesn't enlarge
 	}
 	
-	
-	
-	// AFTERS ==================================================
-	@AfterMethod
-	public void afterMethod() throws InterruptedException
+	@When("^I click on the X for the THIRTEENTH FEATURE PIC$")
+	public void i_click_on_the_X_for_the_THIRTEENTH_FEATURE_PIC() throws Throwable 
 	{
-		Thread.sleep(3000);
-		driver.quit();
+		Thread.sleep(1000);
+		driver.findElement(By.cssSelector("#gallery_13 > div > div > div > div:nth-child(1) > button.back")).click();	// closes image
+	}
+
+	@Then("^the THIRTEENTH FEATURE PIC should MINIMIZE$")
+	public void the_THIRTEENTH_FEATURE_PIC_should_MINIMIZE() throws Throwable 
+	{
+		Thread.sleep(1000);
+		if (!driver.findElement(By.xpath("//img[@src='/img/sync1.jpg']")).isDisplayed())
+		{	System.out.println();	}
+		else
+		{	ob2.featuresLinkMethod().click();	}	// without this the test will show passed even if the image doesn't enlarge
 	}
 	
 }

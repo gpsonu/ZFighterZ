@@ -1,106 +1,99 @@
 package com.test.languagelinks;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 import com.page.factory.FeaturesPagePF;
+import com.utility.Hook;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 
 public class LanguageLinksTest 
 {
-	// INSTANCE VARIABLES ==================================================
-	WebDriver driver = null ;
+	WebDriver driver = Hook.getChromeDriver();
+	FeaturesPagePF ob1 = new FeaturesPagePF(driver);
 	
 	
 	
-	// BEFORES ==================================================
-	@BeforeMethod
-	public void beforeMethod()
+	
+	@Given("^I am on the features page$")
+	public void i_am_on_the_features_page() throws Throwable 
 	{
-		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		
-		FeaturesPagePF ob1 = new FeaturesPagePF(driver);
-		ob1.getURL();		
+		ob1.getURL();
 	}
 	
 	
 	
-	// TESTS ==================================================
-	@Test (priority = 1)
-	public void englishLinkTest() throws InterruptedException
+
+	@When("^I click on the English link$")
+	public void i_click_on_the_English_link() throws Throwable 
 	{
-		FeaturesPagePF ob1 = new FeaturesPagePF(driver);
-		
 		Thread.sleep(1000);
 		ob1.englishLinkMethod();
-		
-		String url = driver.getCurrentUrl();
-		Assert.assertEquals(url, "https://www.crmpro.com/index.html");
+	}
+	
+	@Then("^I should be taken to the homepage of the English version of the site$")
+	public void i_should_be_taken_to_the_homepage_of_the_English_version_of_the_site() throws Throwable 
+	{
+		Assert.assertEquals(driver.getCurrentUrl(), "https://www.crmpro.com/index.html");
 	}
 	
 	
-	@Test (priority = 2)
-	public void spanishLinkTest() throws InterruptedException
+	@When("^I click on the Spanish link$")
+	public void i_click_on_the_Spanish_link() throws Throwable 
 	{
-		FeaturesPagePF ob1 = new FeaturesPagePF(driver);
-		
 		Thread.sleep(1000);
 		ob1.spanishLinkMethod();
-		
-		String url = driver.getCurrentUrl();
-		Assert.assertEquals(url, "https://es.crmpro.com/index.html");
 	}
 	
-	
-	@Test (priority = 3)
-	public void russianLinkTest() throws InterruptedException
+	@Then("^I should be taken to the homepage of the Spanish version of the site$")
+	public void i_should_be_taken_to_the_homepage_of_the_Spanish_version_of_the_site() throws Throwable 
 	{
-		FeaturesPagePF ob1 = new FeaturesPagePF(driver);
-		
+		Assert.assertEquals(driver.getCurrentUrl(), "https://es.crmpro.com/index.html");
+	}
+	
+
+	@When("^I click on the Taiwanese link$")
+	public void i_click_on_the_Taiwanese_link() throws Throwable 
+	{
 		Thread.sleep(1000);
-		ob1.russianLinkMethod();
-		
-		String url = driver.getCurrentUrl();
-		Assert.assertEquals(url, "https://ru.crmpro.com/index.html");
+		ob1.taiwanLinkMethod();  
 	}
 	
-	
-	@Test (priority = 5)
-	public void taiwanLinkTest() throws InterruptedException
+	@Then("^I should be taken to the homepage of the Taiwanese version of the site$")
+	public void i_should_be_taken_to_the_homepage_of_the_Taiwanese_version_of_the_site() throws Throwable 
 	{
-		FeaturesPagePF ob1 = new FeaturesPagePF(driver);
-		
-		Thread.sleep(1000);
-		ob1.taiwanLinkMethod();    
-		
-		String url = driver.getCurrentUrl();
-		Assert.assertEquals(url, "https://tw.crmpro.com/index.html");
+		Assert.assertEquals(driver.getCurrentUrl(), "https://tw.crmpro.com/index.html");
 	}
 	
-	
-	@Test (priority = 6)
-	public void arabicLinkTest() throws InterruptedException
+
+	@When("^I click on the Arabic link$")
+	public void i_click_on_the_Arabic_link() throws Throwable 
 	{
-		FeaturesPagePF ob1 = new FeaturesPagePF(driver);
-		
 		Thread.sleep(1000);
 		ob1.arabicLinkMethod();
-		
-		String url = driver.getCurrentUrl();
-		Assert.assertEquals(url, "https://ar.crmpro.com/index.html");
 	}
 	
-	
-	// AFTERS ==================================================
-	@AfterMethod
-	public void afterMethod() throws InterruptedException
+	@Then("^I should be taken to the homepage of the Arabic version of the site$")
+	public void i_should_be_taken_to_the_homepage_of_the_Arabic_version_of_the_site() throws Throwable 
 	{
-		Thread.sleep(3000);
-		driver.quit();
+		Assert.assertEquals(driver.getCurrentUrl(), "https://ar.crmpro.com/index.html");
 	}
+	
+
+	@When("^I click on the Russian link$")
+	public void i_click_on_the_Russian_link() throws Throwable 
+	{
+		Thread.sleep(1000);
+		ob1.russianLinkMethod();
+	}
+
+	@Then("^I should be taken to the homepage of the Russian version of the site$")
+	public void i_should_be_taken_to_the_homepage_of_the_Russian_version_of_the_site() throws Throwable 
+	{
+		Assert.assertEquals(driver.getCurrentUrl(), "https://ru.crmpro.com/index.html");
+	}
+
 }

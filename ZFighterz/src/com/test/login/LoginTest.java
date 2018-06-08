@@ -46,8 +46,7 @@ public class LoginTest
 	@Then("^I should be logged in$")
 	public void i_should_be_logged_in() throws Throwable 
 	{
-		String url = driver.getTitle();
-		Assert.assertEquals(url, "CRMPRO");	
+		Assert.assertEquals(driver.getTitle(), "CRMPRO");	
 	}
 
 	
@@ -64,8 +63,7 @@ public class LoginTest
 	@Then("^The homepage should refresh and I should NOT be logged in$")
 	public void the_homepage_should_refresh_and_i_should_NOT_be_logged_in() throws Throwable 
 	{
-		String url = driver.getCurrentUrl();
-		Assert.assertEquals(url, "https://www.freecrm.com/index.html?e=1");	
+		Assert.assertEquals(driver.getCurrentUrl(), "https://www.freecrm.com/index.html?e=1");	
 	}	
 
 }

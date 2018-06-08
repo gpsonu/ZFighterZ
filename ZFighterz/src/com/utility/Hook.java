@@ -31,7 +31,7 @@ public class Hook
 	
 	
 	
-	public static WebDriver getChromeDriver()
+	public static WebDriver getDriver()
 	{
 		return driver;
 	}

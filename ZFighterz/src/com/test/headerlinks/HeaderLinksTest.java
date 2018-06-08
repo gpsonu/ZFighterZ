@@ -12,7 +12,7 @@ import cucumber.api.java.en.When;
 
 public class HeaderLinksTest 
 {
-	WebDriver driver = Hook.getChromeDriver();
+	WebDriver driver = Hook.getDriver();
 	HomePagePF ob1 = new HomePagePF(driver);
 	
 	

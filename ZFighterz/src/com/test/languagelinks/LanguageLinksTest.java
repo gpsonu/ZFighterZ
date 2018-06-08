@@ -12,7 +12,7 @@ import cucumber.api.java.en.When;
 
 public class LanguageLinksTest 
 {
-	WebDriver driver = Hook.getChromeDriver();
+	WebDriver driver = Hook.getDriver();
 	FeaturesPagePF ob1 = new FeaturesPagePF(driver);
 	
 	

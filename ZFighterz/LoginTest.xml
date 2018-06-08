@@ -17,6 +17,14 @@
 				
 				</methods>
 			</class>
+			
+					<!--	
+						you can test multiple tests/classes within one testng.xml file
+						to do so, add the 2nd class here
+						you can also choose which methods you want to test of that class by making a methods tag
+						repeat the same if you want a 3rd test, 4th test, etc	
+					-->
+
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

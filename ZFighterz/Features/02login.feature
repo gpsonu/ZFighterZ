@@ -1,7 +1,7 @@
 Feature: CRM Login Feature 
 	This feature tests login functionality
 
-	@chrome
+	@chrome 
 	Scenario Outline: Login with correct user id and password 
 		Given I am on the CRM homepage 
 		And I entered correct "<userid>" and "<password>" 

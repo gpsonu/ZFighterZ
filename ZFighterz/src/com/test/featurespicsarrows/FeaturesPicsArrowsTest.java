@@ -13,7 +13,7 @@ import cucumber.api.java.en.When;
 
 public class FeaturesPicsArrowsTest 
 {
-	WebDriver driver = Hook.getChromeDriver();
+	WebDriver driver = Hook.getDriver();
 	FeaturesPagePF ob1 = new FeaturesPagePF(driver);
 	HomePagePF ob2 = new HomePagePF(driver);
 	

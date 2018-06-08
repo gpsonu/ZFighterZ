@@ -13,7 +13,7 @@ import cucumber.api.java.en.When;
 
 public class LogOutTest {
 
-	WebDriver driver = Hook.getChromeDriver();
+	WebDriver driver = Hook.getDriver();
 	
 	HomePagePF ob1 = new HomePagePF (driver);
 	AccountPagePF ob2 = new AccountPagePF (driver);

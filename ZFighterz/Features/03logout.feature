@@ -20,7 +20,18 @@
 Feature: LogOut
   Testing logout function
 
-  @tag1
+  @chrome
+  Scenario: Clicking on logout button, user should be able to logout
+    Given I on the CRM homepage
+    When  I enter user name and password
+    And   I click on login button
+    Then  I should be logged into my account page
+    When I click on logout
+    Then I should be logged out from my account. Should be rerouted to homepage 
+    
+    
+    
+  @firefox
   Scenario: Clicking on logout button, user should be able to logout
     Given I on the CRM homepage
     When  I enter user name and password

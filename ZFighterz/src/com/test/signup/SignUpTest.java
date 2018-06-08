@@ -41,4 +41,6 @@ public class SignUpTest {
 	signup.checkboxMethod();
 	
 }
+	
+	
 }

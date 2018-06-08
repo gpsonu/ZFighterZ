@@ -86,5 +86,5 @@ public class SignUpTest {
 		Assert.assertEquals(driver.getCurrentUrl(), "https://www.freecrm.com/register/");	
 		
 	}
-	 
+	
 }

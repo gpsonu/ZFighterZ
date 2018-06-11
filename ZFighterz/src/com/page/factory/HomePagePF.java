@@ -30,7 +30,8 @@ public class HomePagePF
 	
 	// FINDBYS & METHODS - LOGIN //////////////////////////////////////////////////
 	@FindBy
-	(xpath = "//input[@name='username']") 
+	//(xpath = "//input[@name='username']") 
+	(css = "input[type=text]")
 	WebElement usernameField;
 	
 	public WebElement usernameFieldMethod()
@@ -40,7 +41,8 @@ public class HomePagePF
 	
 	
 	@FindBy
-	(xpath = "//input[@name='password']")
+	//(xpath = "//input[@name='password']")
+	(css = "input[type=password]")
 	WebElement passwordField;
 	
 	public WebElement passwordFieldMethod()
@@ -50,7 +52,8 @@ public class HomePagePF
 	
 	
 	@FindBy
-	(xpath = "//input[@value='Login']")
+	//(xpath = "//input[@value='Login']")
+	(css = "input[type=submit]")
 	WebElement loginButton;
 	
 	public WebElement loginButtonMethod()

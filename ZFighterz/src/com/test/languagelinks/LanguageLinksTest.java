@@ -54,6 +54,31 @@ public class LanguageLinksTest
 		Assert.assertEquals(driver.getCurrentUrl(), "https://es.crmpro.com/index.html");
 	}
 	
+	@When("^I click on the French link$")
+	public void i_click_on_the_French_link() throws Throwable 
+	{
+		Thread.sleep(1000);
+		ob1.frenchMethod();
+	}
+	
+	@Then("^I should be taken to the homepage of the French version of the site$")
+	public void i_should_be_taken_to_the_homepage_of_the_French_version_of_the_site() throws Throwable 
+	{
+		Assert.assertEquals(driver.getCurrentUrl(), "https://fr.crmpro.com/index.html");
+	}
+	
+	@When("^I click on the Chinese link$")
+	public void i_click_on_the_Chinese_link() throws Throwable 
+	{
+		Thread.sleep(1000);
+		ob1.chineseMethod();
+	}
+	
+	@Then("^I should be taken to the homepage of the Chinese ench version of the site$")
+	public void i_should_be_taken_to_the_homepage_of_the_Chinese_version_of_the_site() throws Throwable 
+	{
+		Assert.assertEquals(driver.getCurrentUrl(), "https://fr.crmpro.com/index.html");
+	}
 
 	@When("^I click on the Taiwanese link$")
 	public void i_click_on_the_Taiwanese_link() throws Throwable 

@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class AccountPagePF {
 
-	WebDriver driver;
+	WebDriver driver;  
 	
 	
 	public AccountPagePF (WebDriver d)

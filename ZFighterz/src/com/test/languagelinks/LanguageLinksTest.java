@@ -37,7 +37,7 @@ public class LanguageLinksTest
 	@Then("^I should be taken to the homepage of the English version of the site$")
 	public void i_should_be_taken_to_the_homepage_of_the_English_version_of_the_site() throws Throwable 
 	{
-		Assert.assertEquals(driver.getCurrentUrl(), "https://www.crmpro.com/index.html");
+		Assert.assertEquals(driver.getCurrentUrl(), "https://www.freecrm.com/index.html");
 	}
 	
 	
@@ -54,6 +54,7 @@ public class LanguageLinksTest
 		Assert.assertEquals(driver.getCurrentUrl(), "https://es.crmpro.com/index.html");
 	}
 	
+	
 	@When("^I click on the French link$")
 	public void i_click_on_the_French_link() throws Throwable 
 	{
@@ -67,6 +68,7 @@ public class LanguageLinksTest
 		Assert.assertEquals(driver.getCurrentUrl(), "https://fr.crmpro.com/index.html");
 	}
 	
+	
 	@When("^I click on the Chinese link$")
 	public void i_click_on_the_Chinese_link() throws Throwable 
 	{
@@ -74,12 +76,13 @@ public class LanguageLinksTest
 		ob1.chineseMethod();
 	}
 	
-	@Then("^I should be taken to the homepage of the Chinese ench version of the site$")
+	@Then("^I should be taken to the homepage of the Chinese version of the site$")
 	public void i_should_be_taken_to_the_homepage_of_the_Chinese_version_of_the_site() throws Throwable 
 	{
 		Assert.assertEquals(driver.getCurrentUrl(), "https://fr.crmpro.com/index.html");
 	}
 
+	
 	@When("^I click on the Taiwanese link$")
 	public void i_click_on_the_Taiwanese_link() throws Throwable 
 	{

@@ -13,7 +13,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 )
 
 @Test
-public class LoginRuner extends AbstractTestNGCucumberTests
+public class LoginRunner extends AbstractTestNGCucumberTests
 {
 
 }

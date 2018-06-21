@@ -47,14 +47,18 @@
 				<version>2.21.0</version>
 				<configuration>
 					<suiteXmlFiles>
-
-						<suiteXmlFile>LoginTest.xml</suiteXmlFile>
-						<suiteXmlFile>FeaturesPicsTest.xml</suiteXmlFile>
-						<suiteXmlFile>HeaderLinksTest.xml</suiteXmlFile>
-						<suiteXmlFile>LanguageLinksTest.xml</suiteXmlFile>
+					
+						<suiteXmlFile>testng.xml</suiteXmlFile>
 
 						<!-- If you want to skip a test, cut it from up top and paste it in 
-							here between these arrows -->
+							here between these arrows 
+							
+							<suiteXmlFile>LoginTest.xml</suiteXmlFile>
+							<suiteXmlFile>HeaderLinksTest.xml</suiteXmlFile>
+							<suiteXmlFile>FeaturesPicsTest.xml</suiteXmlFile>
+							<suiteXmlFile>LanguageLinksTest.xml</suiteXmlFile>
+													
+						-->
 
 					</suiteXmlFiles>
 				</configuration>

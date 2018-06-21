@@ -3,7 +3,7 @@
 <suite name="Suite">
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="com.test.login.LoginTest">
+			<class name="com.test.login.loginTest">
 				<methods>
 					
 					
@@ -12,7 +12,6 @@
 
 						<exclude name="loginTest2p1"/> 
 						<exclude name="loginTest2p5"/> 
-
 					-->
 				
 				</methods>

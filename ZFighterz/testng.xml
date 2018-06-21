@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test">
+		<classes>
+		
+			<class name = "com.runners.SignUpRunner"> 				</class>
+			<class name = "com.runners.LoginRunner">				</class>
+			<class name = "com.runners.LogOutRunner">				</class>
+			<class name = "com.runners.LogoLinkRunner">				</class>
+			<class name = "com.runners.HeaderLinksRunner">			</class>
+			<class name = "com.runners.FeaturesPicsRunner">			</class>
+			<class name = "com.runners.FeaturesPicsArrowsRunner">	</class>
+			<class name = "com.runners.LanguageLinksRunner">		</class>
+			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
